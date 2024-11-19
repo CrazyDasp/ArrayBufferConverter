@@ -12,12 +12,12 @@ export class ArrayBufferConverter {
             throw new Error("Buffer is not loaded")
         }
   
-        const uint8Array = new Uint8Array(this.buffer)
+        const uint16Array = new Uint16Array(this.buffer)
       
         let result = ''
 
-        for (let i = 0; i < uint8Array.length; i++) {
-            result += String.fromCharCode(uint8Array[i])
+        for (let i = 0; i < uint16Array.length; i++) {
+            result += String.fromCharCode(uint16Array[i])
 
         }
 
